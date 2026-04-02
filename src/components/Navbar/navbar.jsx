@@ -1,30 +1,72 @@
-import React from 'react';
-import logo from "../../assets/logo.png"
-import Dollar from "../../assets/dollar 1.png"
+import React from "react";
+import logo from "../../assets/logo.png";
+import Dollar from "../../assets/dollar 1.png";
 
 const navbar = () => {
   return (
-    <div>
-       <div className="navbar bg-base-100 max-mx">
-      <div className="flex-1">
-        <img src={logo} alt="" />
-      </div>
-      <div className="flex items-center">
-        <div className='mr-6'>
-          <ul className='flex gap-6 text-gray-600'>
-            <li>Home</li>
-            <li>Fixture</li>
-            <li>Teams</li>
-            <li>Schedules</li>
+    <>
+      <div className="navbar bg-base-100 max-mx">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                {" "}
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />{" "}
+              </svg>
+            </div>
+            <ul
+              tabIndex="-1"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li>
+                <a>Home</a>
+              </li>
+              <li>
+                <a>Fixture</a>
+              </li>
+              <li>
+                <a>Teams</a>
+              </li>
+              <li>
+                <a>Schedules</a>
+              </li>
+            </ul>
+          </div>
+          <img src={logo} alt="" className="hidden sm:block" />
+        </div>
+        <div className="navbar-end hidden lg:flex">
+          <ul className="menu menu-horizontal px-1">
+            <li>
+              <a>Home</a>
+            </li>
+            <li>
+              <a>Fixture</a>
+            </li>
+            <li>
+              <a>Teams</a>
+            </li>
+            <li>
+              <a>Schedules</a>
+            </li>
           </ul>
         </div>
         <button className="flex items-center gap-2 p-5 btn btn-soft rounded-2xl">
-          <span>1000000</span>Coins
-          <img src={Dollar} alt="" />
-        </button>
+            <span>1000000</span>Coins
+            <img src={Dollar} alt="" />
+          </button>
       </div>
-    </div>
-    </div>
+    </>
   );
 };
 
