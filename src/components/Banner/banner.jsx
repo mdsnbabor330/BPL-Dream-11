@@ -1,14 +1,14 @@
 import React from "react";
 import shadow from "../../assets/bg-shadow.png";
 import Cricket from "../../assets/banner-main.png";
-const banner = () => {
+const Banner = () => {
   return (
     <div
       className="flex items-center justify-center
-        min-h-[545px] bg-gray-900 overflow-hidden relative max-mx sm:rounded-3xl p-2"
+        min-h-135 bg-gray-900 overflow-hidden relative max-mx sm:rounded-3xl p-2"
     >
-      <img src={shadow} className=" absolute h-full" alt="" />
-      <div className="text-center text-white space-y-2">
+      <img src={shadow} className=" absolute h-full " alt="" />
+      <div className="text-center text-white space-y-2 absolute z-10">
         <div>
           <img src={Cricket} className="mx-auto mb-3" alt="" />
         </div>
@@ -18,12 +18,12 @@ const banner = () => {
         <p className="text-[20px] sm:text-[24px] font-medium text-gray-400">
           Beyond Boundaries Beyond Limits
         </p>
-        <button className="btn bg-[#E7FE29] rounded-xl border-0 ">
+        <a className="btn bg-[#E7FE29] rounded-xl border-0 ">
           Claim Free Credit
-        </button>
+        </a>
       </div>
     </div>
   );
 };
 
-export default banner;
+export default Banner;

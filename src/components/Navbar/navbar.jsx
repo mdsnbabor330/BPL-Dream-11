@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../../assets/logo.png";
 import Dollar from "../../assets/dollar 1.png";
 
-const navbar = () => {
+const Navbar = () => {
   return (
     <>
       <div className="navbar bg-base-100 max-mx">
@@ -45,29 +45,31 @@ const navbar = () => {
           </div>
           <img src={logo} alt="" className="hidden sm:block" />
         </div>
-        <div className="navbar-end hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>Fixture</a>
-            </li>
-            <li>
-              <a>Teams</a>
-            </li>
-            <li>
-              <a>Schedules</a>
-            </li>
-          </ul>
-        </div>
-        <button className="flex items-center gap-2 p-5 btn btn-soft rounded-2xl">
+        <div className="navbar-end ">
+          <div className="hidden lg:flex">
+            <ul className="menu menu-horizontal px-1">
+              <li>
+                <a>Home</a>
+              </li>
+              <li>
+                <a>Fixture</a>
+              </li>
+              <li>
+                <a>Teams</a>
+              </li>
+              <li>
+                <a>Schedules</a>
+              </li>
+            </ul>
+          </div>
+          <button className="flex items-center gap-2 p-5 btn btn-soft rounded-2xl">
             <span>1000000</span>Coins
             <img src={Dollar} alt="" />
           </button>
+        </div>
       </div>
     </>
   );
 };
 
-export default navbar;
+export default Navbar;
