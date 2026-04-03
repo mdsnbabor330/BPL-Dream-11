@@ -14,6 +14,7 @@ const AvailablePlayers = ({
         {players?.map((player) => {
           return (
             <Card
+              key={player.id}
               player={player}
               setCoin={setCoin}
               coin={coin}

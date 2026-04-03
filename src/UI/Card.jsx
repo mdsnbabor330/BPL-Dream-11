@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import { Flag, User } from "lucide-react";
+import { toast } from 'react-toastify';
 const Card = ({
   player,
   setCoin,
@@ -7,25 +7,30 @@ const Card = ({
   selectedPlayers,
   setSelectedPlayers,
 }) => {
-  const [isSelected, setIsSelected] = useState(false);
+  const isSelected = selectedPlayers.some((p) => p.id === player.id);
 
   const handelChoosePlayer = () => {
+    if (selectedPlayers.length >= 6) {
+      toast.error("You can choose at most 6 players")
+      return;
+    }
+    if (isSelected) {
+      toast.error("Player already selected");
+      return;
+    }
     let newCoin = coin - player.price;
     if (newCoin >= 0) {
       setCoin(newCoin);
+      toast.success(`${player.playerName} is selected`);
+      setSelectedPlayers([...selectedPlayers, player]);
     } else {
-      alert("Not enough coin to purchase this player");
-      return;
+      toast.error("Not enough coin to purchase this player")
     }
-    alert(`${player.playerName} is selected`);
-    setIsSelected(true);
-    setSelectedPlayers([...selectedPlayers, player]);
   };
 
   return (
     <>
       <div
-        key={player.id}
         className="card bg-base-100 w-full shadow-sm border border-gray-200"
       >
         <figure className="p-4">
