@@ -1,202 +1,222 @@
 [
   {
     "id": 1,
-    "playerImage": "https://i.ibb.co.com/4Zy5dyxM/abar-azom.jpg",
+    "playerImage": "https://i.ibb.co.com/PGsgqyBg/Babor.jpg",
     "playerName": "Babar Azam",
     "palyerCountry": "Pakistan",
+    "playerType": "Batsman",
     "rating": 93,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "price": 1400000
+    "price": 14000
   },
   {
     "id": 2,
     "playerImage": "https://i.ibb.co.com/2YCcdPvx/joe-root.jpg",
     "playerName": "Joe Root",
     "palyerCountry": "England",
+    "playerType": "All-Rounder",
     "rating": 92,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "price": 1350000
+    "price": 13500
   },
   {
     "id": 3,
     "playerImage": "https://i.ibb.co.com/GYHJNnn/Steve-Smith.jpg",
     "playerName": "Steve Smith",
     "palyerCountry": "Australia",
+    "playerType": "Batsman",
     "rating": 94,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak",
-    "price": 1450000
+    "price": 14500
   },
   {
     "id": 4,
     "playerImage": "https://i.ibb.co.com/nMb87QvR/Kane-Williamson.jpg",
     "playerName": "Kane Williamson",
     "palyerCountry": "New Zealand",
+    "playerType": "Batsman",
     "rating": 91,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "price": 1300000
+    "price": 13000
   },
   {
     "id": 5,
     "playerImage": "https://i.ibb.co.com/wFMry42N/Ben-Stokes.jpg",
     "playerName": "Ben Stokes",
     "palyerCountry": "England",
+    "playerType": "All-Rounder",
     "rating": 89,
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm fast-medium",
-    "price": 1200000
+    "price": 12000
   },
   {
     "id": 6,
     "playerImage": "https://i.ibb.co.com/hF8rkqGH/David-Warner.webp",
     "playerName": "David Warner",
     "palyerCountry": "Australia",
+    "playerType": "Batsman",
     "rating": 88,
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm legbreak",
-    "price": 1150000
+    "price": 11500
   },
   {
     "id": 7,
     "playerImage": "https://i.ibb.co.com/NnWMC9QG/Jos-Buttler.jpg",
     "playerName": "Jos Buttler",
     "palyerCountry": "England",
+    "playerType": "Wicket-Keeper",
     "rating": 90,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Wicketkeeper",
-    "price": 1300000
+    "price": 13000
   },
   {
     "id": 8,
     "playerImage": "https://i.ibb.co.com/ksd0kVXZ/Trent-Boult.webp",
     "playerName": "Trent Boult",
     "palyerCountry": "New Zealand",
+    "playerType": "Bowler",
     "rating": 89,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Left-arm fast",
-    "price": 1250000
+    "price": 12500
   },
   {
     "id": 9,
     "playerImage": "https://i.ibb.co.com/C5nXmRPj/Mitchell-Starc.jpg",
     "playerName": "Mitchell Starc",
     "palyerCountry": "Australia",
+    "playerType": "Bowler",
     "rating": 91,
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Left-arm fast",
-    "price": 1350000
+    "price": 13500
   },
   {
     "id": 10,
     "playerImage": "https://i.ibb.co.com/n8ff40n9/Pat-Cummins.jpg",
     "playerName": "Pat Cummins",
     "palyerCountry": "Australia",
+    "playerType": "Bowler",
     "rating": 90,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast",
-    "price": 1300000
+    "price": 13000
   },
   {
     "id": 11,
     "playerImage": "https://i.ibb.co.com/HDj6zdgr/Rashid-Khan.webp",
     "playerName": "Rashid Khan",
     "palyerCountry": "Afghanistan",
+    "playerType": "All-Rounder",
     "rating": 93,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak",
-    "price": 1400000
+    "price": 14000
   },
   {
     "id": 12,
     "playerImage": "https://i.ibb.co.com/Gf0fB7jd/Mohammad-Nabi.webp",
     "playerName": "Mohammad Nabi",
     "palyerCountry": "Afghanistan",
+    "playerType": "All-Rounder",
     "rating": 85,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "price": 900000
+    "price": 9000
   },
   {
     "id": 13,
     "playerImage": "https://i.ibb.co.com/LLNPQWD/Mustafizur-Rahman.webp",
     "playerName": "Mustafizur Rahman",
     "palyerCountry": "Bangladesh",
+    "playerType": "Bowler",
     "rating": 86,
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Left-arm fast-medium",
-    "price": 950000
+    "price": 9500
   },
   {
     "id": 14,
     "playerImage": "https://i.ibb.co.com/BHL9r2rs/litton-das.webp",
     "playerName": "Litton Das",
     "palyerCountry": "Bangladesh",
+    "playerType": "Wicket-Keeper",
     "rating": 88,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Wicketkeeper",
-    "price": 1100000
+    "price": 11000
   },
   {
     "id": 15,
     "playerImage": "https://i.ibb.co.com/7dLzsZqq/Kusal-Mendis.jpg",
     "playerName": "Kusal Mendis",
     "palyerCountry": "Sri Lanka",
+    "playerType": "Wicket-Keeper",
     "rating": 85,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Wicketkeeper",
-    "price": 900000
+    "price": 9000
   },
   {
     "id": 16,
     "playerImage": "https://i.ibb.co.com/Zp88kYX6/mahmodullah.jpg",
     "playerName": "Mahmudullah Riyad",
     "palyerCountry": "Bangladesh",
+    "playerType": "All-Rounder",
     "rating": 87,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "price": 1000000
+    "price": 10000
   },
   {
     "id": 17,
     "playerImage": "https://i.ibb.co.com/S4K9Qq2y/Quinton-de-Kock.jpg",
     "playerName": "Quinton de Kock",
     "palyerCountry": "South Africa",
+    "playerType": "Wicket-Keeper",
     "rating": 87,
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Wicketkeeper",
-    "price": 1100000
+    "price": 11000
   },
   {
     "id": 18,
     "playerImage": "https://i.ibb.co.com/8n7Dd8jt/Aaron-Finch.jpg",
     "playerName": "Aaron Finch",
     "palyerCountry": "Australia",
+    "playerType": "Batsman",
     "rating": 88,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
-    "price": 1100000
+    "price": 11000
   },
   {
     "id": 19,
     "playerImage": "https://i.ibb.co.com/DDb34mpy/Glenn-Maxwell.jpg",
     "playerName": "Glenn Maxwell",
     "palyerCountry": "Australia",
+    "playerType": "All-Rounder",
     "rating": 89,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "price": 1200000
+    "price": 12000
   },
   {
     "id": 20,
     "playerImage": "https://i.ibb.co.com/mVTN9gz4/Tim-Southee.jpg",
     "playerName": "Tim Southee",
     "palyerCountry": "New Zealand",
+    "playerType": "Bowler",
     "rating": 87,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast",
-    "price": 1000000
+    "price": 10000
   }
 ]
