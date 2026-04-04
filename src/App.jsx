@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Banner from "./components/Banner/Banner";
 import Players from "./components/players/Playerss";
+import Footer from "./components/Footer/Footer";
 import { Suspense, useState } from "react";
 
 const fetchPlayers = async () => {
@@ -27,6 +28,7 @@ function App() {
           coin={coin}
         ></Players>
       </Suspense>
+      <Footer></Footer>
     </>
   );
 }
