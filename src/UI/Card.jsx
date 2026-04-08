@@ -9,7 +9,7 @@ const Card = ({
 }) => {
   const isSelected = selectedPlayers.some((p) => p.id === player.id);
 
-  const handelChoosePlayer = () => {
+  const handleChoosePlayer = () => {
     if (selectedPlayers.length >= 6) {
       toast.error("You can choose at most 6 players")
       return;
@@ -48,7 +48,7 @@ const Card = ({
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-1 text-gray-500">
               <Flag size={18} />
-              <p>{player.palyerCountry}</p>
+              <p>{player.playerCountry}</p>
             </div>
             <button className="btn btn-sm btn-ghost bg-gray-100">
               {player.bowlingStyle}
@@ -67,8 +67,7 @@ const Card = ({
           <div className="flex justify-between items-center">
             <p className="font-bold">Price: ${player.price}</p>
             <button
-              onClick={handelChoosePlayer}
-              disabled={isSelected}
+              onClick={handleChoosePlayer}
               className={`btn btn-sm ${isSelected == true ? "bg-[#E7FE29]" : "btn-outline"} hover:bg-[#E7FE29] hover:text-black`}
             >
               {isSelected == true ? "Selected" : "Choose Player"}

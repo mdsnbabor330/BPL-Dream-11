@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import SelectedCard from "../../UI/selectedCard";
 
 const SelectedPlayers = ({ selectedPlayers, setSelectedPlayers }) => {
-  const handleDeleteSelecctedPlayer = (player) => {
+  const handleDeleteSelectedPlayer = (player) => {
     const filteredPlayers = selectedPlayers.filter(
       (selectplayer) => selectplayer.id !== player.id,
     );
@@ -24,7 +24,7 @@ const SelectedPlayers = ({ selectedPlayers, setSelectedPlayers }) => {
       ) : (
         selectedPlayers.map((player) => {
           return (
-            <SelectedCard player={player} handleDeleteSelecctedPlayer={handleDeleteSelecctedPlayer} 
+            <SelectedCard player={player} handleDeleteSelectedPlayer={handleDeleteSelectedPlayer} 
             key={player.id}></SelectedCard>
           );
         })

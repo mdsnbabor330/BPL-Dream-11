@@ -2,32 +2,32 @@ import React, { use, useState } from "react";
 import AvailablePlayers from "../AvailablePlayers/AvailablePlayers";
 import SelectedPlayers from "../selectedPlayers/SelectedPlayers";
 
-const Playerss = ({ playersPromise, setCoin, coin }) => {
+const Players = ({ playersPromise, setCoin, coin }) => {
   const players = use(playersPromise);
-  const [selectedType, setselectedType] = useState("available");
+  const [selectedType, setSelectedType] = useState("available");
   const [selectedPlayers, setSelectedPlayers] = useState([]);
 
   return (
     <>
-      <div className="max-mx transition-shadow">
+      <div className="max-mx transition-shadow min-h-screen">
         <div className="flex justify-between items-center mt-10 mb-6">
           {selectedType == "available" ? (
             <p className="text-[28px] font-bold">Available Players</p>
           ) : (
             <p className="text-[28px] font-bold">
-              Selected Players ({selectedPlayers.length}/{players.length})
+              Selected Players ({selectedPlayers.length}/6)
             </p>
           )}
-          <div className="flex rounded-sm overflow-hidden">
+          <div className="flex rounded-sm overflow-hidden border border-gray-100">
             <button
-              onClick={() => setselectedType("available")}
-              className={`btn ${selectedType == "available" ? "bg-[#E7FE29]" : "btn-soft"}  border-0 rounded-none`}
+              onClick={() => setSelectedType("available")}
+              className={`btn ${selectedType == "available" ? "bg-[#E7FE29] font-bold" : "btn-ghost"}  border-0 rounded-none`}
             >
               Available
             </button>
             <button
-              onClick={() => setselectedType("selected")}
-              className={`btn ${selectedType == "selected" ? "bg-[#E7FE29]" : "btn-soft"}  border-0 rounded-none`}
+              onClick={() => setSelectedType("selected")}
+              className={`btn ${selectedType == "selected" ? "bg-[#E7FE29] font-bold" : "btn-ghost"}  border-0 rounded-none`}
             >
               Selected ({selectedPlayers.length})
             </button>
@@ -42,14 +42,16 @@ const Playerss = ({ playersPromise, setCoin, coin }) => {
             setSelectedPlayers={setSelectedPlayers}
           ></AvailablePlayers>
         ) : (
-          <SelectedPlayers
-            selectedPlayers={selectedPlayers}
-            setSelectedPlayers={setSelectedPlayers}
-          ></SelectedPlayers>
+          <div className="space-y-6">
+            <SelectedPlayers
+              selectedPlayers={selectedPlayers}
+              setSelectedPlayers={setSelectedPlayers}
+            ></SelectedPlayers>
+          </div>
         )}
       </div>
     </>
   );
 };
 
-export default Playerss;
+export default Players;

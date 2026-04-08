@@ -1,7 +1,14 @@
 import React from "react";
 import shadow from "../../assets/bg-shadow.png";
 import Cricket from "../../assets/banner-main.png";
-const Banner = () => {
+import { toast } from "react-toastify";
+
+const Banner = ({ setCoin }) => {
+  const handleClaimCredit = () => {
+    setCoin((prev) => prev + 6000000);
+    toast.success("Credit Added to your Account");
+  };
+
   return (
     <div
       className="flex items-center justify-center
@@ -18,9 +25,12 @@ const Banner = () => {
         <p className="text-[20px] sm:text-[24px] font-medium text-gray-400">
           Beyond Boundaries Beyond Limits
         </p>
-        <a className="btn bg-[#E7FE29] rounded-xl border-0 ">
+        <button
+          onClick={handleClaimCredit}
+          className="btn bg-[#E7FE29] rounded-xl border-0 hover:bg-[#d4e924] transition-colors"
+        >
           Claim Free Credit
-        </a>
+        </button>
       </div>
     </div>
   );

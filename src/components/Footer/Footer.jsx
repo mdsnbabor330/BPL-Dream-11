@@ -1,38 +1,9 @@
 import React from 'react';
 import footerLogo from '../../assets/logo-footer.png';
-import bgShadow from '../../assets/bg-shadow.png';
 
 const Footer = () => {
     return (
-        <div className="relative mt-80">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 max-w-7xl z-10">
-                <div className="p-4 bg-white/15 backdrop-blur-3xl rounded-4xl border border-white/20 shadow-2xl">
-                    <div
-                        className="bg-white rounded-3xl py-16 px-6 text-center flex flex-col items-center justify-center bg-no-repeat bg-cover bg-center overflow-hidden relative"
-                        style={{ backgroundImage: `url(${bgShadow})` }}
-                    >
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#131313] mb-4">
-                            Subscribe to our Newsletter
-                        </h2>
-                        <p className="text-[#131313]/70 text-lg mb-8 max-w-2xl font-medium">
-                            Get the latest updates and news right in your inbox!
-                        </p>
-                        <div className="flex flex-col md:flex-row gap-4 w-full max-w-xl">
-                            <input
-                                type="email"
-                                placeholder="Enter your email"
-                                className="input input-bordered w-full bg-white text-gray-800 h-14 rounded-xl border-gray-200 text-base px-6 shadow-sm"
-                            />
-                            <button className="btn h-14 px-10 rounded-xl bg-linear-to-r from-pink-400 via-orange-400 to-yellow-400 border-none text-[#131313] font-bold text-base  shadow-md">
-                                Subscribe
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {/* Main Footer Content */}
-            <footer className="bg-[#06091a] pt-60 pb-12 px-6">
+            <footer className="bg-[#06091a] pt-20 pb-12 px-6">
                 <div className="max-w-7xl mx-auto flex flex-col items-center">
                     {/* Logo */}
                     <div className="mb-16">
@@ -87,7 +58,6 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-        </div>
     );
 };
 

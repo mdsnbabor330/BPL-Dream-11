@@ -1,34 +1,31 @@
 import React from 'react';
-import { Delete, User } from "lucide-react";
-const selectedCard = ({player, handleDeleteSelecctedPlayer}) => {
-    return (
-            <div
-              className=" p-5 rounded-2xl border-2 shadow-xl flex items-center justify-between"
-            >
-            <div className="flex items-center justify-center gap-4 ">
-              <div className=" h-30 w-30 overflow-hidden flex items-center rounded-2xl">
-                <img
-                  src={player.playerImage}
-                  alt=""
-                  className="scale-180 bg-center"
-                />
-              </div>
-              <div className="space-y-4">
-                <div className="flex gap-2 items-center">
-                  <User />
-                  <p className="font-bold text-[18px]">{player.playerName}</p>
-                </div>
-                <p>{player.playerType}</p>
-              </div>
-            </div>
-            <button
-              className="btn h-15 shadow-sm border border-gray-200"
-              onClick={() => handleDeleteSelecctedPlayer(player)}
-            >
-              <Delete />
-            </button>
-            </div>
-    );
+import { Trash2, User } from "lucide-react";
+
+const SelectedCard = ({ player, handleDeleteSelectedPlayer }) => {
+  return (
+    <div className="p-4 rounded-xl border border-gray-100 shadow-sm flex items-center justify-between bg-white">
+      <div className="flex items-center gap-4">
+        <div className="h-16 w-16 overflow-hidden flex items-center rounded-lg bg-gray-50 border border-gray-100">
+          <img
+            src={player.playerImage}
+            alt={player.playerName}
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div>
+          <h3 className="font-bold text-lg">{player.playerName}</h3>
+          <p className="text-gray-500 text-sm">{player.playerType}</p>
+          <p className="text-gray-800 font-medium text-sm mt-1">${player.price}</p>
+        </div>
+      </div>
+      <button
+        className="btn btn-ghost text-red-500 hover:bg-red-50 p-2 h-auto min-h-0 rounded-lg"
+        onClick={() => handleDeleteSelectedPlayer(player)}
+      >
+        <Trash2 size={24} />
+      </button>
+    </div>
+  );
 };
 
-export default selectedCard;
+export default SelectedCard;

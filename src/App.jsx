@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Banner from "./components/Banner/Banner";
-import Players from "./components/players/Playerss";
+import Players from "./components/players/Players";
 import Footer from "./components/Footer/Footer";
 import { Suspense, useState } from "react";
 
@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <Navbar coin={coin}></Navbar>
-      <Banner></Banner>
+      <Banner setCoin={setCoin}></Banner>
       <Suspense
         fallback={
           <span className="loading loading-spinner text-secondary"></span>
